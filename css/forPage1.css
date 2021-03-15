@@ -1,0 +1,33 @@
+@media only screen and (min-width: 800px) {
+	.containerGrid {
+		grid-template-rows: 40px 400px 100px;
+		row-gap: 30px;
+	}
+	.subContainerGrid {
+		grid-template-rows: 80px 80px 80px 80px;
+		row-gap: 10px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.containerGrid {
+		grid-template-rows: auto 510px auto;
+	}
+	.subContainerGrid {
+		grid-template-rows: 120px 70px 70px 70px;
+		row-gap: 50px;
+	}
+	.cols {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 70px;
+	}
+}
+.containerGrid {
+	display: grid;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.subContainerGrid {
+	display: grid;
+}

@@ -1,0 +1,24 @@
+#indexButton {
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.mainBox {
+	background-color: #0f2660;
+	width: 60%;
+	height: 740px;
+	position: absolute;
+	left: 20%;
+	z-index: -1;
+	opacity: 0.6;
+	border-radius: 10%;
+}
+body {
+	padding-top: 5%;
+	background-image: url("http://localhost/work2/img/bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}

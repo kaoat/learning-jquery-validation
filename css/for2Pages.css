@@ -1,0 +1,40 @@
+.row {
+	display: grid;
+}
+.lastRow {
+	display: grid;
+}
+@media only screen and (max-width: 800px) {
+	.row {
+		grid-template-columns: 100%;
+	}
+	.topic {
+		font-size: 20px;
+		color: white;
+	}
+	.lastRow {
+		grid-template-columns: 100%;
+		row-gap: 15px;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.row {
+		grid-template-columns: 15% 85%;
+	}
+	.topic {
+		font-size: 40px;
+		color: white;
+	}
+	.lastRow {
+		grid-template-columns: 25% 25% auto;
+		column-gap: 12.5%;
+	}
+	.cols {
+		display: grid;
+		grid-template-columns: auto auto;
+		column-gap: 5%;
+	}
+}
+div {
+	color: white;
+}

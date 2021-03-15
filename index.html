@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tanutchakorn Khaisang</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+		/>
+		<link rel="stylesheet" href="css/for2Pages.css" />
+		<link rel="stylesheet" href="css/forIndex.css" />
+		<link rel="stylesheet" href="css/forPage1.css" />
+		<link rel="stylesheet" href="css/forPage2.css" />
+	</head>
+	<body>
+		<div class="mainBox"></div>
+		<div id="indexButton">
+			<span style="color: red">Only support for English</span>
+			<button class="form-control btn btn-primary">>>Register<<</button>
+			<span>Tanutchakorn Khaisang 1813110499</span>
+		</div>
+		<div id="page1"></div>
+		<div id="page2"></div>
+		<!-- Javascript and Jquery -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script>
+			$(document).ready(() => {
+				js = "http://localhost/work2/js/forIndex.js";
+				$.ajax({
+					type: "post",
+					url: js,
+				});
+			});
+		</script>
+	</body>
+</html>

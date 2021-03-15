@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<form id="form2" onsubmit="return false">
+			<div class="containerGrid2">
+				<div>
+					<span class="topic">Registration Form page.2</span>
+				</div>
+				<div>
+					<div class="subContainerGrid2">
+						<div class="row">
+							<div>username</div>
+							<div>
+								<input
+									name="uname"
+									class="form-control"
+									type="text"
+									placeholder="username"
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div>Password/Re-Pass</div>
+							<div class="colss">
+								<div class="p1">
+									<input
+										class="form-control"
+										type="password"
+										name="p1"
+										placeholder="Password"
+									/>
+								</div>
+								<div class="vis">
+									<i
+										id="visibility"
+										class="form-control fa fa-eye-slash fa-eye btn btn-light"
+									></i>
+								</div>
+								<div class="p2">
+									<input
+										class="form-control"
+										type="password"
+										name="p2"
+										placeholder="Re-Password"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div>Password Policy</div>
+							<div class="colse">
+								<div id="policy1">- At least 8 characters</div>
+								<div id="policy2">
+									- A mixture of both uppercase and lowercase letters
+								</div>
+								<div id="policy3">- A mixture of letters and numbers</div>
+								<div id="policy4">
+									- Inclusion of least one special character: ! @ # ?
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div>reCAPTCHA</div>
+							<div class="cols2">
+								<canvas id="reCAPTCHA"></canvas>
+								<div>
+									<input
+										class="form-control"
+										type="text"
+										name="rc"
+										placeholder="reCAPTCHA"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row lastRow">
+					<div>
+						<button id="previousButton" class="form-control btn btn-info">
+							<<<< previous
+						</button>
+					</div>
+					<div>
+						<button
+							id="submitButton"
+							class="form-control btn btn-secondary"
+							disabled
+						>
+							Submit
+						</button>
+					</div>
+					<div>
+						<button id="resetButton2" class="form-control btn btn-warning">
+							Reset
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
